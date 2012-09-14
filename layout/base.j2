@@ -1,0 +1,141 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  {%- block starthead %}{%- endblock starthead %}
+  <meta charset="{{ site.meta.charset }}">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="{{ resource.meta.compatibility }}">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>{%- block title %}{{ resource.meta.title }}{%- endblock title %} | GO-SHIP</title>
+
+  <link rel="stylesheet" href="{{ media_url('css/ioccp.css') }}" type="text/css">
+
+<style type="text/css">
+<!--
+.style9 {font-size: 10px}
+.style35 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; }
+.style40 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style42 {font-weight: bold; color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style43 {font-weight: bold; color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+body {
+	background-color: #FFFFFF;
+}
+.style45 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body text="#000000" link="#333366" vlink="#333366" alink="#333366" >
+<table width="933" border="0" cellpadding="0" cellspacing="0">
+  <tr bgcolor="#666666"> 
+    <td height="19" colspan="2" bgcolor="#5C849B"> 
+      <div align="center" class="style40"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">WWW.GO-SHIP.ORG</font></div>    </td>
+    <td colspan="4" bgcolor="#5C849B"><div align="right" class="style9"><span class="style42">SPONSORS: <a href="http://www.ioccp.org" target="_blank" class="topbar" style="text-decoration:none; color:#FFFFFF"">IOCCP</a> | <a href="http://www.clivar.org/" target="_blank" class="topbar" style="text-decoration:none; color:#FFFFFF">CLIVAR</a></span></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#FFFFFF"><div align="center"><img src="{{ media_url('images/GO-SHIPlogo.gif') }}" width="110" height="107" /></div></td>
+    <td colspan="4" bgcolor="#FFFFFF"><div align="right"><img src="{{ media_url('images/GSbanner.gif') }}" width="730" height="107" /></div></td>
+  </tr>
+  
+  <tr> 
+    <td width="198" height="283" align="left" valign="top" bgcolor="#FFFFFF"> 
+      
+<table width="198" border="0" bordercolor="#FFFFFF" cellspacing="3" cellpadding="3">
+<tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('index.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">HOME</a></span></td>
+        </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43" style="text-decoration:none; color:#FFFFFF"><a href="{{ content_url('About.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">ABOUT GO-SHIP</a></span></td>
+        </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B" class="style43"><a href="{{ content_url('CruisePlans.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">CRUISE PLANS</a></td>
+        </tr>
+            
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('DataDirect.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">DATA DIRECTORY</a></span></td>
+            </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B" class="style43"><a href="{{ content_url('HydroMan.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">HYDRO MANUAL</a></td>
+            </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('Documents.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">DOCUMENTS</a></span></td>
+            </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('News.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">NEWS</a></span></td>
+        </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('Join.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">JOIN THE EMAIL LIST</a></span></td>
+        </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('Contacts.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">CONTACT</a> </span></td>
+        </tr>
+            <tr>
+              <td height="25" colspan="2" bordercolor="#FFFFFF" bgcolor="#5C849B"><span class="style43"><a href="{{ content_url('QuickLinks.html') }}" class="topbar" style="text-decoration:none; color:#FFFFFF">QUICK LINKS</a></span></td>
+            </tr>
+            <tr>
+              <td height="25" bordercolor="#FFFFFF" bgcolor="#FFFFFF">&nbsp;</td>
+              <td valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="18" height="25" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><img src="{{ media_url('images/Jump.gif') }}" width="15" height="16" border="0" usemap="#Map4" /></td>
+              <td width="159" valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><p class="style45">Jump to:<br />
+              GO-SHIP Reference Sections <a href="{{ media_url('files/RefSecs/GOSHIPMap_April2011.pdf') }}" target="_blank">MAP</a></p>              </td>
+            </tr>
+            <tr>
+              <td height="25" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><img src="{{ media_url('images/Jump.gif') }}" alt="" width="15" height="16" border="0" usemap="#Map7" /></td>
+              <td height="25" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><p><span class="style45">Jump to:<br />
+GO-SHIP Reference Sections <a href="{{ media_url('files/RefSecs/GOSHIP_TableMay2010.pdf') }}" target="_blank">TABLE</a></span></p>
+              </td>
+            </tr>
+    </table>    </td>
+    <td width="4" valign="top">&nbsp;</td>
+    <td colspan="4" valign="top"> 
+      <div align="left">
+        <table width="731" border="0" cellpadding="5">
+          <tr> 
+            <td width="730" height="118" valign="top">
+              {% block content %}{% endblock %}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top" height="19" bgcolor="#5C849B">&nbsp;</td>
+    <td bgcolor="#5C849B" valign="top"> 
+    <div align="right" class="style9"></div>    </td>
+    <td width="730" valign="top" bgcolor="#5C849B"><div align="right"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><!--a href="file:///C|/Inetpub/IOCCPMH/ContactsSSG.htm" class="topbar"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"></a--></font><span class="style35">Project Office address: UNESCO-IOC, 1 Rue Miollis, Paris France 75732 Cedex 15 </span></div></td>
+    <td width="1" valign="top" bgcolor="#666666"><div align="right"><span class="style9"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><!--a href="file:///C|/Inetpub/IOCCPMH/ContactsSSG.htm" class="topbar"></a--></font></span></div></td>
+  </tr>
+</table>
+
+
+<map name="Map4" id="Map4"><area shape="rect" coords="0,-2,18,19" href="{{ media_url('files/RefSecs/GOSHIP_May2010.pdf') }}" target="_blank"></map>
+<map name="Map7" id="Map7"><area shape="rect" coords="-1,-2,16,18" href="{{ media_url('files/RefSecs/GOSHIP_TableMay2010.pdf') }}" target="_blank"></map>
+{% include "analytics.j2" %}
+</body>
+</html>

@@ -1,0 +1,77 @@
+mode: development
+media_root: media
+media_url: /media
+base_url: /
+template: hyde.ext.templates.jinja.Jinja2Template
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+context:
+    data:
+        menu:
+            -
+                name: Home
+                description: Home page
+                css_class: home
+                type: page
+                url: index.html
+            -
+                name: About
+                description: About
+                css_class: about
+                type: page
+                url: About.html
+            -
+                name: Cruise Plans
+                description: Cruise plans
+                css_class: cruise_plans
+                type: page
+                url: CruisePlans.html
+            -
+                name: Data Directory
+                description: Data directory
+                css_class: datadir
+                type: page
+                url: DataDirect.html
+            -
+                name: Hydro Manual
+                description: Hydro manual
+                css_class: hydroman
+                type: page
+                url: HydroMan.html
+            -
+                name: Documents
+                description: Documents
+                css_class: docs
+                type: page
+                url: Documents.html
+            -
+                name: News
+                description: News
+                css_class: news
+                type: page
+                url: News.html
+            -
+                name: Join the Email List
+                description: Join the email list
+                css_class: join-email
+                type: page
+                url: Join.html
+            -
+                name: Contact
+                description: Contact
+                css_class: contact
+                type: page
+                url: Contacts.html
+            -
+                name: Quick Links
+                description: Quick links
+                css_class: quicklinks
+                type: page
+                url: QuickLinks.html
+meta:
+    nodemeta: meta.yaml
+    charset: utf-8
+    compatability: 'IE=edge,chrome=1'
+    analytics:
+        id: 'UA-11749193-1'
