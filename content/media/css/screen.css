@@ -77,7 +77,6 @@ tr.header td.right a {
 #nav #navcontainer table td {
   font-weight: bold;
   font-size: 12px;
-  padding: 3px;
 }
 #nav #navcontainer .navlink tr {
   border-color: #FFFFFF;
@@ -91,6 +90,10 @@ tr.header td.right a {
 .navlink a {
   color: #FFFFFF;
   text-decoration: none;
+  display: block;
+  height: 25px;
+  padding: 3px;
+  line-height: 25px;
 }
 
 td.content {
