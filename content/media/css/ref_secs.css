@@ -1,0 +1,68 @@
+.scrollable {
+  height: 30em;
+  overflow: auto;
+}
+.goship.ref-secs #go-ship-map {
+  max-width: none;
+}
+.goship.ref-secs #global-map {
+  text-align: center;
+}
+.goship.ref-secs .directlink {
+  display: block;
+  font-size: 0.7em;
+}
+.goship.ref-secs .decadally {
+  font-size: 0.7em;
+}
+.goship.ref-secs table {
+  width: 100%;
+}
+.goship.ref-secs th {
+  text-align: left;
+}
+.goship.ref-secs table .section {
+  width: 15%;
+}
+.goship.ref-secs table .description {
+  width: 30%;
+}
+.goship.ref-secs table .past {
+  width: 36%;
+}
+.goship.ref-secs table .future {
+  width: 18%;
+}
+.goship.ref-secs .cruises p {
+  line-height: 1.2em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.goship.ref-secs .cruises div {
+  margin-bottom: 1em;
+  vertical-align: top;
+  display: inline-block;
+  width: 45%;
+  left: 55%;
+}
+.goship.ref-secs .year {
+  font-size: 1.2em;
+}
+.goship.ref-secs .country {
+  font-size: 0.9em;
+  color: #666;
+}
+.goship.ref-secs .links {
+  list-style: none;
+  margin-left: 0;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+.goship.ref-secs .links li {
+  line-height: 1.3em;
+}
+
+.goship.ref-secs table a,
+.goship.ref-secs table a:visited {
+  color: #0088cc;
+}

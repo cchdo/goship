@@ -28,10 +28,12 @@
   <meta name="viewport" content="{{ site.meta.viewport }}">
 
   {%- block favicons %}{%- endblock favicons %}
-  {%- block css %}
+  {%- block precss %}{%- endblock precss %}
+  {%- block basecss %}
     <link rel="stylesheet" href="{{ media_url('css/normalize.css') }}">
     <link rel="stylesheet" href="{{ media_url('css/screen.css') }}">
-  {%- endblock css %}
+  {%- endblock basecss %}
+  {%- block postcss %}{%- endblock postcss %}
   {%- block headjs %}
   {#
   <!-- All JavaScript at the bottom, except for Modernizr which
@@ -96,16 +98,10 @@
         </tr>
 
         <tr>
-          <td width="18" height="25"  ><img src="{{ media_url('images/Jump.gif') }}" width="15" height="16" border="0" usemap="#Map4" /></td>
-          <map name="Map4" id="Map4"><area shape="rect" coords="0,-2,18,19" href="{{ media_url('files/RefSecs/GOSHIP_May2010.pdf') }}" target="_blank"></map>
-          <td width="159" valign="top"><p class="style45">Jump to:<br />
-          GO-SHIP Reference Sections <a href="{{ media_url('files/RefSecs/GOSHIPMap_April2011.pdf') }}" target="_blank">MAP</a></p>              </td>
-        </tr>
-        <tr>
-          <td height="25"><img src="{{ media_url('images/Jump.gif') }}" width="15" height="16" border="0" usemap="#Map7" /></td>
-          <map name="Map7" id="Map7"><area shape="rect" coords="-1,-2,16,18" href="{{ media_url('files/RefSecs/GOSHIP_TableMay2010.pdf') }}" target="_blank"></map>
+          <td height="25" width="25px"><img src="{{ media_url('images/Jump.gif') }}" width="15" height="16" border="0" usemap="#Map7" /></td>
+          <map name="Map7" id="Map7"><area shape="rect" coords="-1,-2,16,18" href="/RefSecs/goship_ref_secs.html"></map>
           <td height="25"><p><span class="style45">Jump to:<br />
-          GO-SHIP Reference Sections <a href="{{ media_url('files/RefSecs/GOSHIP_TableMay2010.pdf') }}" target="_blank">TABLE</a></span></p>
+          <a href="/RefSecs/goship_ref_secs.html">GO-SHIP Reference Sections</a></span></p>
           </td>
         </tr>
       </table>

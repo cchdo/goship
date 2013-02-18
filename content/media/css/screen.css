@@ -4,7 +4,7 @@
 
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 0.5em;
+  font-size: 12px;
 	background-color: #FFFFFF;
   text: #000000;
   margin: 8px;
@@ -19,7 +19,7 @@ a:active {
   color: #333366;
 }
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
 }
 
 .right {
@@ -27,11 +27,14 @@ table {
 }
 
 table#container {
-  width: 933px;
+  min-width: 933px;
+  width: 100%;
   border-spacing: 0 0;
 }
-table#container th,
-table#container td {
+tr.header td,
+tr.banner td,
+tr.nav td
+{
   padding: 0;
 }
 tr.header {
@@ -56,7 +59,8 @@ tr.header td.right a {
   text-align: center;
 }
 #bannerimg {
-  text-align: right;
+  text-align: left;
+  background-color: #5C849B;
 }
 
 #banner td {
@@ -72,7 +76,7 @@ tr.header td.right a {
 }
 #nav #navcontainer table {
   width: 198px;
-  border-spacing: 3px;
+  border-spacing: 0;
 }
 #nav #navcontainer table td {
   font-weight: bold;
@@ -92,11 +96,10 @@ tr.header td.right a {
   text-decoration: none;
   display: block;
   height: 25px;
-  padding: 3px;
   line-height: 25px;
 }
 
-td.content {
+table#container td.content {
   vertical-align: top;
   width: 731px;
   padding: 5px;
@@ -147,6 +150,35 @@ h1 {
 #index #bulletins th,
 #index #bulletins td {
   padding-bottom: 1em;
+  padding-right: 1em;
+}
+
+#marquee {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  position: relative;
+  margin-bottom: 10px;
+}
+#marquee_0, #marquee_1 {
+  position: absolute;
+  left: 140px;
+  width: 480px;
+  text-align: center;
+  line-height: 1.1em;
+}
+#marquee_0 {
+  top: 70px;
+}
+#marquee_1 {
+  bottom: 0;
+  font-size: 0.8em;
+}
+#marquee a {
+  color: #08C;
+}
+
+h2 {
+  padding: 0.1em;
 }
 
 #About h2 {

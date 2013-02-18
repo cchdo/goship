@@ -1,0 +1,1650 @@
+---
+extends: ref_secs.j2
+title: GO-SHIP Reference Sections
+---
+<div class="goship ref-secs container-fluid">
+  <h1>GO-SHIP Reference Sections</h1>
+  <p>
+    GO-SHIP Reference Sections are repeat hydrographic sections that are
+    coast-to-coast or coast-to-ice, follow standard WOCE lines with small
+    modifications as necessary for territorial waters, ice coverage, etc., and
+    maintain the standard WOCE sampling strategy. Sections not labelled
+    decadally are repeated more frequently (1-3 years).
+  </p>
+  <p><a href="GOSHIP_TableMay2010.pdf" class="btn">May 2010 Reference Section Table (PDF)</a></p>
+  <p>Last updated: Dec 2012</p>
+
+  <p id="footnote-decadally">
+    <a href="#footnote-decadally" class="decadally">(decadal)</a>
+    Section is re-occupied on a decadal timescale.
+  </p>
+
+<div id="global-map">
+  <p class="alert alert-info">Click labels on the map to jump to the section in the tables.</p>
+  <p><a href="img/go-ship_map_3000.png" class="btn btn-mini">Full resolution map</a></p>
+  <img id="go-ship-map" src="img/go-ship_map_1024.png" width="1024px" usemap="#m_go-ship-map" alt="">
+  <map name="m_go-ship-map">
+  <area shape="poly" coords="849,167,896,167,896,194,849,194,849,167" href="#a05" alt="" />
+  <area shape="poly" coords="734,98,784,98,784,125,734,125,734,98" href="#a02" alt="" />
+  <area shape="poly" coords="690,84,735,84,735,111,690,111,690,84" href="#a01w" alt="" />
+  <area shape="poly" coords="636,47,697,47,697,85,636,85,636,47" href="#barrows-and-nares-straits" alt="" />
+  <area shape="poly" coords="799,34,844,34,844,61,799,61,799,34" href="#75-n" alt="" />
+  <area shape="poly" coords="820,68,871,68,871,93,820,93,820,68" href="#a01e" alt="" />
+  <area shape="poly" coords="833,93,886,93,886,120,833,120,833,93" href="#a01e" alt="" />
+  <area shape="poly" coords="861,124,916,124,916,152,861,152,861,124" href="#a25" alt="" />
+  <area shape="poly" coords="793,133,838,133,838,160,793,160,793,133" href="#a16n" alt="" />
+  <area shape="poly" coords="703,137,746,137,746,163,703,163,703,137" href="#a22" alt="" />
+  <area shape="poly" coords="750,203,796,203,796,229,750,229,750,203" href="#a20" alt="" />
+  <area shape="poly" coords="806,234,854,234,854,263,806,263,806,234" href="#a17" alt="" />
+  <area shape="poly" coords="882,284,926,284,926,310,882,310,882,284" href="#a13-5" alt="" />
+  <area shape="poly" coords="890,334,938,334,938,361,890,361,890,334" href="#a10" alt="" />
+  <area shape="poly" coords="817,317,861,317,861,343,817,343,817,317" href="#a16s" alt="" />
+  <area shape="poly" coords="753,398,810,398,810,427,753,427,753,398" href="#a21" alt="" />
+  <area shape="poly" coords="725,432,771,432,771,458,725,458,725,432" href="#sr04" alt="" />
+  <area shape="poly" coords="660,402,706,402,706,430,660,430,660,402" href="#sr01" alt="" />
+  <area shape="poly" coords="543,430,588,430,588,458,543,458,543,430" href="#s04p" alt="" />
+  <area shape="poly" coords="598,359,641,359,641,386,598,386,598,359" href="#p18" alt="" />
+  <area shape="poly" coords="497,380,541,380,541,406,497,406,497,380" href="#p16s" alt="" />
+  <area shape="poly" coords="442,380,487,380,487,406,442,406,442,380" href="#p15s" alt="" />
+  <area shape="poly" coords="400,360,440,360,440,386,400,386,400,360" href="#p14s" alt="" />
+  <area shape="poly" coords="537,336,582,336,582,365,537,365,537,336" href="#p06" alt="" />
+  <area shape="poly" coords="551,284,594,284,594,310,551,310,551,284" href="#p21" alt="" />
+  <area shape="poly" coords="539,176,580,176,580,200,539,200,539,176" href="#p03" alt="" />
+  <area shape="poly" coords="492,128,539,128,539,157,492,157,492,128" href="#p16n" alt="" />
+  <area shape="poly" coords="527,97,573,97,573,124,527,124,527,97" href="#p01" alt="" />
+  <area shape="poly" coords="527,24,591,24,591,68,527,68,527,24" href="#barrows-and-nares-straits" alt="" />
+  <area shape="poly" coords="420,23,466,23,466,52,420,52,420,23" href="#rusalca" alt="" />
+  <area shape="poly" coords="440,111,482,111,482,139,440,139,440,111" href="#p14n" alt="" />
+  <area shape="poly" coords="432,153,478,153,478,182,432,182,432,153" href="#p02" alt="" />
+  <area shape="poly" coords="380,220,423,220,423,248,380,248,380,220" href="#p13" alt="" />
+  <area shape="poly" coords="336,276,380,276,380,302,336,302,336,276" href="#p10" alt="" />
+  <area shape="poly" coords="315,194,358,194,358,222,315,222,315,194" href="#p09" alt="" />
+  <area shape="poly" coords="352,400,395,400,395,428,352,428,352,400" href="#sr03" alt="" />
+  <area shape="poly" coords="281,386,324,386,324,412,281,412,281,386" href="#i09s" alt="" />
+  <area shape="poly" coords="174,419,220,419,220,446,174,446,174,419" href="#s04i" alt="" />
+  <area shape="poly" coords="231,360,269,360,269,386,231,386,231,360" href="#i08s" alt="" />
+  <area shape="poly" coords="90,373,127,373,127,399,90,399,90,373" href="#i06s" alt="" />
+  <area shape="poly" coords="155,333,191,333,191,358,155,358,155,333" href="#i05" alt="" />
+  <area shape="poly" coords="101,307,139,307,139,336,101,336,101,307" href="i07n" alt="" />
+  <area shape="poly" coords="149,255,190,255,190,280,149,280,149,255" href="#i02" alt="" />
+  <area shape="poly" coords="222,215,261,215,261,244,222,244,222,215" href="#i01e" alt="" />
+  <area shape="poly" coords="190,177,229,177,229,203,190,203,190,177" href="#i09n" alt="" />
+  <area shape="poly" coords="73,215,111,215,111,240,73,240,73,215" href="#a01w" alt="" />
+  </map>
+</div>
+  <h2 id="basin-atlantic">Atlantic</h2>
+  <table class="table table-striped table-condensed">
+    <tr>
+      <th class="section">Section</th>
+      <th class="description">Description (ship track)</th>
+      <th class="past">Most Recent Occupations</th>
+      <th class="future">Next Occupation</th>
+    </tr>
+    <tr>
+      <td class="section" id="a01e">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A01E">A01E/AR7E</a>
+        <a class="directlink" href="#a01e">this section</a>
+      </td>
+      <td class="description">Greenland to Ireland</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007</p>
+    <p class="chisci">G.-J. Brummer</p>
+    <p class="country">Netherlands</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/64PE20070830">64PE20070830</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">H. van Aken</p>
+    <p class="country">Netherlands</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a01w">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A01W">A01W / AR7W</a>
+        <a class="directlink" href="#a01w">this section</a>
+      </td>
+      <td class="description">From Labrador to Greenland 53°N
+56°W to 61°N 48°W; 1/year
+(spring)</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2010</p>
+    <p class="chisci">G. Harrison (Chief Sci / bio); I. Yashayaev (phys); K. Azetsu‐Scott (chem.)</p>
+    <p class="country">Canada</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/18HU20100513">18HU20100513</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010 and 2011
+(August)</p>
+    <p class="chisci">M. Rhein</p>
+    <p class="country">Germany</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2014</p>
+    <p class="chisci"></p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a02">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A02">A02 (SFB-460)</a>
+        <a class="directlink" href="#a02">this section</a>
+      </td>
+      <td class="description">~ 48° N, Ireland to St John’s Bay,
+Canada.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007 (full line)</p>
+    <p class="chisci">M. Rhein</p>
+    <p class="country">Germany</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2009 (western part) </p>
+    <p class="chisci">M. Rhein</p>
+    <p class="country">Germany</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2010-13</p>
+    <p class="chisci"> M. Rhein</p>
+    <p class="country">Germany</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a05">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A05">A05</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a05">this section</a>
+      </td>
+      <td class="description">24° N (note: this line is part of the
+UK RAPID program with repeats
+every ~ 5 years).</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2010</p>
+    <p class="chisci">Brian A King</p>
+    <p class="country">UK</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/74DI20100106">74DI20100106</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">P. Velez</p>
+    <p class="country">Spain</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2015</p>
+    <p class="chisci"></p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="ao95">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=AO95">A9 1/2</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#ao95">this section</a>
+      </td>
+      <td class="description">24°S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">B. King</p>
+    <p class="country">UK</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a10">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A10">A10</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a10">this section</a>
+      </td>
+      <td class="description">30°S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2011</p>
+    <p class="chisci">M. Baringer</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RO20110926">33RO20110926</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a12">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A12">A12</a>
+        <a class="directlink" href="#a12">this section</a>
+      </td>
+      <td class="description">Capetown to the Antarctic
+continent along the prime
+meridian; often done in a pair with
+SR04.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2008</p>
+    <p class="chisci">E. Fahrbach / H. De Baar</p>
+    <p class="country">Germany / Netherlands</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/06AQ20080210">06AQ20080210</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">E. Fahrbach / M. Hoppema</p>
+    <p class="country">Germany / Netherlands</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/06AQ20101128">06AQ20101128</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a13-5">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A13.5">A13.5</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a13-5">this section</a>
+      </td>
+      <td class="description">0°; Cape Town to Ghana</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2003</p>
+    <p class="chisci">M. Hoppema</p>
+    <p class="country">Germany</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">J. Bullister</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RO20100308">33RO20100308</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a16n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A16N">A16N</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a16n">this section</a>
+      </td>
+      <td class="description">20-25° W Iceland to 5° S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2003</p>
+    <p class="chisci">J. Bullister</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RO200306_01">33RO200306_01</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">Brian King</p>
+    <p class="country">UK</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2012</p>
+    <p class="chisci">R. Wanninkhof</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a16s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A16S">A16S</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a16s">this section</a>
+      </td>
+      <td class="description">25-35° W, 5° S to 60° S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2005</p>
+    <p class="chisci">R. Wanninkhof</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RO200501">33RO200501</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013</p>
+    <p class="chisci">R. Wanninkhof</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a20">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A20">A20</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a20">this section</a>
+      </td>
+      <td class="description">52°W</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2003</p>
+    <p class="chisci">J. Toole</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N200309">316N200309</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2012</p>
+    <p class="chisci">Michael McCartney</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33AT20120419">33AT20120419</a></li>
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a21">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A21">A21</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a21">this section</a>
+      </td>
+      <td class="description">Drake Passage</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">E. McDonagh</p>
+    <p class="country">UK</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2009</p>
+    <p class="chisci">C. Provost</p>
+    <p class="country">France (full physics, chem., and tracers)</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a22">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A22">A22</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#a22">this section</a>
+      </td>
+      <td class="description">66°W</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2003</p>
+    <p class="chisci">T. Joyce</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N200310">316N200310</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2012</p>
+    <p class="chisci">Ruth Curry</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33AT20120324">33AT20120324</a></li>
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a17">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A17">FICARAM (A17)</a>
+        <a class="directlink" href="#a17">this section</a>
+      </td>
+      <td class="description">Ushuaia - Cartagena (Spain),
+following part of the line WOCEA
+A17 and from 10°S to 36°N along
+28°W  </td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2006</p>
+    <p class="chisci">A. Rios</p>
+    <p class="country">Spain</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013</p>
+    <p class="chisci">A. Rios</p>
+    <p class="country">Spain</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="a25">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=A25">OVIDE (A25)</a>
+        <a class="directlink" href="#a25">this section</a>
+      </td>
+      <td class="description">Iberian Peninsula - Greenland</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2008</p>
+    <p class="chisci">A. Rios</p>
+    <p class="country">Spain</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">H. Mercier</p>
+    <p class="country">France</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="sr01">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=SR01">SR1b (eastern
+passage)</a>
+        <a class="directlink" href="#sr01">this section</a>
+      </td>
+      <td class="description">Drake Passage
+(note: SR1b repeated annually with
+CTD, SADCP, LADCP)</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">E. McDonagh</p>
+    <p class="country">UK</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">E. McDonagh</p>
+    <p class="country">UK</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013/2014</p>
+    <p class="chisci"></p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="sr04">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=SR04">SR04</a>
+        <a class="directlink" href="#sr04">this section</a>
+      </td>
+      <td class="description">Section from tip of Antarctic
+Peninsula to Kapp Norvegia
+(approx 12° W) along the northern
+edge of the Weddell gyre
+(nominally 60° S); often done as a
+pair with A12.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009/10</p>
+    <p class="chisci">B. King</p>
+    <p class="country">UK</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">E. Fahrbach / M. Hoppema</p>
+    <p class="country">Germany / Netherlands</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+  </table>
+  <h2 id="basin-pacific">Pacific</h2>
+  <table class="table table-striped table-condensed">
+    <tr>
+      <th class="section">Section</th>
+      <th class="description">Description (ship track)</th>
+      <th class="past">Most Recent Occupations</th>
+      <th class="future">Next Occupation</th>
+    </tr>
+    <tr>
+      <td class="section" id="p01">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P01">P01</a>
+        <a class="directlink" href="#p01">this section</a>
+      </td>
+      <td class="description">47° N</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007</p>
+    <p class="chisci"> T. Kawano</p>
+    <p class="country"> Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20070724">49NZ20070724</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2014</p>
+    <p class="chisci"></p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p02">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P02">P02</a>
+        <a class="directlink" href="#p02">this section</a>
+      </td>
+      <td class="description">30° N</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2004</p>
+    <p class="chisci"> J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/318M200406">318M200406</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013</p>
+    <p class="chisci"> J. Swift</p>
+    <p class="country"> USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p03">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P03">P03</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p03">this section</a>
+      </td>
+      <td class="description">24°N; Okinawa to San Diego.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2006</p>
+    <p class="chisci">Kawano, Murata, and Watanabe</p>
+    <p class="country"> Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20051031">49NZ20051031</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20051127">49NZ20051127</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20060120">49NZ20060120</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">To be conducted by JMA. </p>
+    <p class="country">Japan</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p06">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P06">P06</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p06">this section</a>
+      </td>
+      <td class="description">30°S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci"> A. MacDonald/R. Curry</p>
+    <p class="country"> USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/318M20091121">318M20091121</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/318M20100105">318M20100105</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">Ruth Curry</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p09">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P09">P09</a>
+        <a class="directlink" href="#p09">this section</a>
+      </td>
+      <td class="description">137°E</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1994</p>
+    <p class="chisci"> I. Kaneko</p>
+    <p class="country"> Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49RY9407_1">49RY9407_1</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci"> T. Nakano</p>
+    <p class="country"></p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49UP20100706">49UP20100706</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p10">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P10">P10</a>
+        <a class="directlink" href="#p10">this section</a>
+      </td>
+      <td class="description">147°E</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2005</p>
+    <p class="chisci"> T. Kawano </p>
+    <p class="country">Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20050525">49NZ20050525</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2011</p>
+    <p class="chisci"></p>
+    <p class="country">Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20111220">49NZ20111220</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20120113">49NZ20120113</a></li>
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p13">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P13">P13</a>
+        <a class="directlink" href="#p13">this section</a>
+      </td>
+      <td class="description">165°E</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1992</p>
+    <p class="chisci"> J. Bullister</p>
+    <p class="country"> USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/3220CGC92_1">3220CGC92_1</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci"> T. Nakano</p>
+    <p class="country"> Japan </p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49UP20110515">49UP20110515</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p14n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P14N">P14N</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p14n">this section</a>
+      </td>
+      <td class="description">Aleutians intersection with P01 and
+Northward.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007</p>
+    <p class="chisci"> T. Kawano and A. Murata</p>
+    <p class="country"> Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20071008">49NZ20071008</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20071122">49NZ20071122</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Plan is for approximately decadal occupation of P14 by Japan.</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p14s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P14S">P14S/C</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p14s">this section</a>
+      </td>
+      <td class="description">174°E (done along with S04I /
+S04P)</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007</p>
+    <p class="chisci"> T. Kawano / A. Murata </p>
+    <p class="country">Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20071008">49NZ20071008</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20071122">49NZ20071122</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013</p>
+    <p class="chisci"> T. Kawano</p>
+    <p class="country"> Japan </p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p15s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P15S">P15S</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p15s">this section</a>
+      </td>
+      <td class="description">Equator - 50°S 175°W (strategy
+calls for section to go to 67°S when
+possible).</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci"> B. Sloyan</p>
+    <p class="country"> Australia</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/09SS20090203">09SS20090203</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2015/2016</p>
+    <p class="chisci"></p>
+    <p class="country">Australia</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p16s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P16S">P16S</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p16s">this section</a>
+      </td>
+      <td class="description">150°W (55°N-15°S / 15°S to ice S)</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2005</p>
+    <p class="chisci">B. Sloyan and J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RR200501">33RR200501</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p16n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P16N">P16N</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p16n">this section</a>
+      </td>
+      <td class="description"></td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2006</p>
+    <p class="chisci">R. Feely </p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/325020060213">325020060213</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p16n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P16N">P16N</a>
+        <a class="directlink" href="#p16n">this section</a>
+      </td>
+      <td class="description"></td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2008</p>
+    <p class="chisci">Emerson</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p16">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P16">P16</a>
+        <a class="directlink" href="#p16">this section</a>
+      </td>
+      <td class="description"></td>
+      <td class="cruises past">
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2014</p>
+    <p class="chisci">R. Feely/J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p18">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P18">P18</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p18">this section</a>
+      </td>
+      <td class="description">110° W</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2008</p>
+    <p class="chisci"> J. Bullister and G. Johnson </p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RO20071215">33RO20071215</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="p21">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=P21">P21</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#p21">this section</a>
+      </td>
+      <td class="description">17°S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci"> A. Murata</p>
+    <p class="country"> Japan</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20090410">49NZ20090410</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/49NZ20090521">49NZ20090521</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Plan is for decadal occupations</p>
+    <p class="country"> Japan</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="sr03">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=SR03">SR03</a>
+        <a class="directlink" href="#sr03">this section</a>
+      </td>
+      <td class="description">Tasmania to Antarctic Continent,
+140 - 145°E</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2008</p>
+    <p class="chisci">S. Rintoul</p>
+    <p class="country">Australia</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">S. Rintoul</p>
+    <p class="country"> Australia</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="s04p">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=S04P">S04P (modified)</a>
+        <a class="directlink" href="#s04p">this section</a>
+      </td>
+      <td class="description">Nominal 67°S; McMurdo to Punta
+Arenas; connects to S04I and SR04
+(Atlantic) with sections from 67 to
+the continent along P14, P15, P16,
+and P18.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1992</p>
+    <p class="chisci"> Koshlyakov and Richman</p>
+    <p class="country"> Russia</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/90KDIOFFE6_1">90KDIOFFE6_1</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/320620110219">320620110219</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+  </table>
+  <h2 id="basin-indian">Indian</h2>
+  <table class="table table-striped table-condensed">
+    <tr>
+      <th class="section">Section</th>
+      <th class="description">Description (ship track)</th>
+      <th class="past">Most Recent Occupations</th>
+      <th class="future">Next Occupation</th>
+    </tr>
+    <tr>
+      <td class="section" id="i01e">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I01E">I01E</a>
+        <a class="directlink" href="#i01e">this section</a>
+      </td>
+      <td class="description">8° N, Sri Lanka to Singapore</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1995</p>
+    <p class="chisci">H. Bryden</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N145_12">316N145_12</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i01w">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I01W">I01W</a>
+        <a class="directlink" href="#i01w">this section</a>
+      </td>
+      <td class="description">8° N, Oman to Sri Lanka</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1995</p>
+    <p class="chisci">J. Morrison</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N145_11">316N145_11</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i02">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I02">I02 + I10</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#i02">this section</a>
+      </td>
+      <td class="description">I02 (10° S) + I10 (8° - 25° S at 111° E)
+*note: may be changed to I8N + I5E
++ I10 for security reasons</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1995</p>
+    <p class="chisci">J. Sprintall</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N145_14">316N145_14</a></li>
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N145_15">316N145_15</a></li>
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">A. Murata</p>
+    <p class="country">Japan</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i05">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I05">I05</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#i05">this section</a>
+      </td>
+      <td class="description">32° S, Durban to Freemantle</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RR20090320">33RR20090320</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i06s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I06S">I06S</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#i06s">this section</a>
+      </td>
+      <td class="description">30° E Cape Town to Antarctic
+Continent</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2008</p>
+    <p class="chisci">K. Speer</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RR20080204">33RR20080204</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i07n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I07N">I07N</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#i07n">this section</a>
+      </td>
+      <td class="description">65° - 55° E, Oman to Mauritius</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1995</p>
+    <p class="chisci">J. Toole/D. Olson</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/316N145_9">316N145_9</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Postponed
+indefinitely for
+security reasons</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i08s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I08S">I08S</a>
+        <a class="directlink" href="#i08s">this section</a>
+      </td>
+      <td class="description">95 - 82° E from 27° S to Antarctic
+Continent</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007</p>
+    <p class="chisci">J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RR20070204">33RR20070204</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i09n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I09N">I09N</a> <a class="decadally" href="#footnote-decadally">(decadal)</a>
+        <a class="directlink" href="#i09n">this section</a>
+      </td>
+      <td class="description">95° E, 28 - 4° S</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2007</p>
+    <p class="chisci">J. Sprintall</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/33RR20070322">33RR20070322</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year"></p>
+    <p class="chisci">Unknown</p>
+    <p class="country"></p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="i09s">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=I09S">I09S</a>
+        <a class="directlink" href="#i09s">this section</a>
+      </td>
+      <td class="description">115° E</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2005</p>
+    <p class="chisci">S. Rintoul</p>
+    <p class="country">Australia</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/09AR20041223">09AR20041223</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013</p>
+    <p class="chisci">S. Rintoul</p>
+    <p class="country">Australia</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="s04i">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=S04I">S04I</a>
+        <a class="directlink" href="#s04i">this section</a>
+      </td>
+      <td class="description">Section connecting I09S and S04P
+at ~ 60° S; S04/S04I + P14S, 62° S
+(33.5° E-168° E) + 174° E</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">1996</p>
+    <p class="chisci">J. Swift</p>
+    <p class="country">USA</p>
+    <ul class="links">
+        <li><a href="http://cchdo.ucsd.edu/cruise/320696_3">320696_3</a></li>
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2013</p>
+    <p class="chisci">T. Kawano</p>
+    <p class="country">Japan</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+  </table>
+  <h2 id="basin-arctic">Arctic</h2>
+  <table class="table table-striped table-condensed">
+    <tr>
+      <th class="section">Section</th>
+      <th class="description">Description (ship track)</th>
+      <th class="past">Most Recent Occupations</th>
+      <th class="future">Next Occupation</th>
+    </tr>
+    <tr>
+      <td class="section" id="75-n">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=75*N">75*N</a>
+        <a class="directlink" href="#75-n">this section</a>
+      </td>
+      <td class="description">Iceland - Greenland.</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">T. Johannessen and A. Olsen</p>
+    <p class="country">Norway</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2011</p>
+    <p class="chisci">T. Johannessen and A. Olsen</p>
+    <p class="country">Norway</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="barrows-and-nares-straits">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=Barrows and Nares Straits">Barrows and Nares Straits</a>
+        <a class="directlink" href="#barrows-and-nares-straits">this section</a>
+      </td>
+      <td class="description">Barrow Strait (74.09° N 90.44° W
+to 74.83° N 93.00° W);
+Nares Strait (occupied irregularly)</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">J. Hamilton</p>
+    <p class="country">Canada</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">J. Hamilton</p>
+    <p class="country">Canada</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="barrow-to-svalbard">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=Barrow to Svalbard">Barrow to Svalbard</a>
+        <a class="directlink" href="#barrow-to-svalbard">this section</a>
+      </td>
+      <td class="description">Barrow Alaska to Svalbard Norway</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2005</p>
+    <p class="chisci">L. Anderson</p>
+    <p class="country">Sweden</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+        
+  <div class="even">
+    <p class="year">2012</p>
+    <p class="chisci">L. Anderson</p>
+    <p class="country">Sweden</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="davis-straits">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=Davis Straits">Davis Straits</a>
+        <a class="directlink" href="#davis-straits">this section</a>
+      </td>
+      <td class="description">Baffin Island to Greenland</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">C. Lee and B. Petrie</p>
+    <p class="country">USA and Canada</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">C. Lee and K. Azetsu-Scott</p>
+    <p class="country">USA and Canada</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+    <tr>
+      <td class="section" id="rusalca">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query=RUSALCA">RUSALCA</a>
+        <a class="directlink" href="#rusalca">this section</a>
+      </td>
+      <td class="description">Bering and Chukchi Seas</td>
+      <td class="cruises past">
+        
+  <div class="even">
+    <p class="year">2009</p>
+    <p class="chisci">R. Woodgate</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+        
+  <div class="odd">
+    <p class="year">2010</p>
+    <p class="chisci">R. Woodgate</p>
+    <p class="country">USA</p>
+    <ul class="links">
+    </ul>
+  </div>
+      </td>
+      <td class="cruises future">
+      </td>
+    </tr>
+  </table>
+</div>
+<script>
+var resizeImgMaps = (function() {
+  // Adapted from http://home.comcast.net/~urbanjost/semaphore.html
+  function _map(lambda, list) {
+    var newlist = [];
+    for (var i = 0; i < list.length; i++) {
+      var x = list[i];
+      newlist.push(lambda.call(x));
+    }
+    return newlist;
+  }
+  
+  function natural_width(img) {
+    return img.naturalWidth ? img.naturalWidth : img.width;
+  };
+  function natural_height(img) {
+    return img.naturalHeight ? img.naturalHeight : img.height;
+  };
+  function curr_width(img) {
+    return img.width;
+  };
+  function curr_height(img) {
+    return img.height;
+  };
+  
+  function ResizableImgMap(img, map) {
+    this.map = map;
+    this.img = img;
+  
+    this._width = natural_width(this.img);
+    this._height = natural_height(this.img);
+  
+    this._coords = [];
+  
+    var areas = this.map.children;
+    for (var i = 0; i < areas.length; i++) {
+      var area = areas[i];
+      var coords = _map(function () { return Number(this); },
+                        area.coords.split(','));
+      this._coords.push([area, coords]);
+    }
+  }
+  
+  // Check image dimensions and resize the map appropriately
+  ResizableImgMap.prototype.resize = function () {
+    var cwidth = curr_width(this.img);
+    var cheight = curr_height(this.img);
+  
+    var ratio = cwidth / this._width;
+    if (!isFinite(ratio) || ratio == 0) {
+      return;
+    }
+    _map(function () {
+      var area = this[0];
+      var coords = this[1];
+      var scaled = _map(function () { return Math.round(this * ratio); },
+                        coords);
+      var coordstr = scaled.join(',');
+      area.coords = coordstr;
+    }, this._coords);
+  };
+  
+  // Detect all images with maps; wrap and resize them.
+  var ims = [];
+  var imgs = document.getElementsByTagName('img');
+  var img_maps = {};
+  for (var i = 0; i < imgs.length; i++) {
+    var img = imgs[i];
+    if (img.useMap) {
+      img_maps[img.useMap.slice(1)] = img;
+    }
+  }
+  var maps = document.getElementsByTagName('map');
+  for (var i = 0; i < maps.length; i++) {
+    var map = maps[i];
+    var img = img_maps[map.name];
+  
+    var im = new ResizableImgMap(img, map);
+    ims.push(im);
+  }
+  function resizeImgMaps() {
+    // Breathe for half a second so the style settles
+    // FIXME Find a better way. Resize when detected image size change?
+    setTimeout(function () {
+      _map(function () { this.resize(); }, ims);
+    }, 500);
+  }
+  return resizeImgMaps;
+})();
+
+var map = document.getElementById('go-ship-map');
+map.style.width = '100%';
+map.style.maxWidth = '1024px';
+window.onresize = function(event) {
+  resizeImgMaps();
+};
+window.onresize();
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2167386-12']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
