@@ -1,4 +1,4 @@
-mode: development
+mode: production
 media_root: media
 media_url: /media
 base_url: /
@@ -75,4 +75,4 @@ meta:
     compatibility: 'IE=edge,chrome=1'
     viewport: 'width=device-width, initial-scale=1.0'
     analytics:
-        id: 'UA-11749193-1'
+        id: 'UA-2167386-12'
