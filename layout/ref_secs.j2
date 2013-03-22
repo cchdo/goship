@@ -1,7 +1,82 @@
 {%- extends "base.j2" %}
 {%- block precss %}
-<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+<link rel="stylesheet" href="//twitter.github.com/bootstrap/assets/css/bootstrap.css">
 {%- endblock precss %}
 {%- block postcss %}
 <link rel="stylesheet" href="{{ media_url('css/ref_secs.css') }}">
 {%- endblock postcss %}
+{%- macro goship_ref_sec_cruise(cruise, oddity) %}
+  <div class="{{ oddity }}">
+    <p class="year">{{ cruise.year }}</p>
+    <p class="chisci">{{ cruise.chisci }}</p>
+    <p class="country">{{ cruise.country }}</p>
+    <ul class="links">
+      {%- for expo in cruise.expos %}
+        <li><a href="http://cchdo.ucsd.edu/cruise/{{ expo }}">{{ expo }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endmacro %}
+{%- block content %}
+<div class="goship ref-secs container-fluid">
+  <h1>GO-SHIP Reference Sections</h1>
+  <p>
+    GO-SHIP Reference Sections are repeat hydrographic sections that are
+    coast-to-coast or coast-to-ice, follow standard WOCE lines with small
+    modifications as necessary for territorial waters, ice coverage, etc., and
+    maintain the standard WOCE sampling strategy. Sections not labelled
+    decadally are repeated more frequently (1-3 years).
+    {#A table of measurements for each cruise is provided at the end of this document. #}
+  </p>
+  <p>Last updated: Dec 2012</p>
+
+  <p id="footnote-decadally">
+    <a href="#footnote-decadally" class="decadally">(decadal)</a>
+    Section is re-occupied on a decadal timescale.
+  </p>
+
+{% include "goship_map.j2" %}
+
+{%- for basin in basins %}
+  <h2 id="basin-{{ slugify(basin.name) }}">{{ basin.name }}</h2>
+  <table class="table table-striped table-condensed">
+    <tr>
+      <th class="section">Section</th>
+      <th class="description">Description (ship track)</th>
+      <th class="past">Most Recent Occupations</th>
+      <th class="future">Next Occupation</th>
+    </tr>
+  {%- for section in basin %}
+    <tr>
+      <td class="section" id="{{ slugify(section.nice_section) }}">
+        <a href="http://cchdo.ucsd.edu/search?expanded=true&query={{ section.nice_section }}">{{ section.section }}</a>
+        {%- if section.decadally %} <a class="decadally" href="#footnote-decadally">(decadal)</a>{%- endif %}
+        <a class="directlink" href="#{{ slugify(section.nice_section) }}">this section</a>
+      </td>
+      <td class="description">{{ section.description }}</td>
+      <td class="cruises past">
+      {%- for cruise in section.past %}
+        {{ goship_ref_sec_cruise(cruise, loop.cycle('even', 'odd')) }}
+      {%- endfor %}
+      </td>
+      <td class="cruises future">
+      {%- for cruise in section.future %}
+        {{ goship_ref_sec_cruise(cruise, loop.cycle('even', 'odd')) }}
+      {%- endfor %}
+      </td>
+    </tr>
+  {%- endfor %}
+  </table>
+{%- endfor %}
+</div>
+<script src="{{ media_url('js/resize_imgmap.js') }}"></script>
+<script>
+var map = document.getElementById('go-ship-map');
+map.style.width = '100%';
+map.style.maxWidth = '1024px';
+window.onresize = function(event) {
+  resizeImgMaps();
+};
+window.onresize();
+</script>
+{%- endblock content %}
